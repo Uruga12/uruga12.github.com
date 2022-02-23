@@ -23,4 +23,9 @@ function scrollTo(element) {
   })
 }
 
-va
+var button = document.querySelector('.roadmap_b');
+var footer = document.querySelector('#roadmap_s');
+
+button.addEventListener('click', () => {
+  scrollTo(footer);
+})
