@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital@1&display=swap');
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  font-family: 'Space Mono', monospace;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  background-image: url(banner_0.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: white;
+}
+
+
+/* Header */
+
+header {
+  background-color: #3c202a;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  min-height: 60px;
+
+}
+
+.logo a{
+
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* Nav */
+
+/* .nav__links is ul */
+
+.nav__links{
+  display: flex;
+}
+
+
+.nav__links li{
+  list-style-type: none;
+  /* float: left; */
+}
+
+.nav__links a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 3px;
+  display: block;
+  padding: 1.6em 2em;
+}
+
+.nav__links a:hover {
+  background: #28151c;
+  color: #F5F5F5;
+}
+
+.nav__links a.active {
+  background: #28151c;
+}
+
+/* Container */
+
+.container {
+  padding: 0 1em;
+  max-width: 1000px;
+  margin: 1em auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+
+/* Footer */
+
+.footer {
+  background: #3C202B;
+  color: #fff;
+  min-height: 50px;
+  margin-top: auto;
+  padding: 0 1em;
+  display: flex;
+  /* align-items: center; */
+}
+
+footer {
+  margin: auto;
+}
+
+
+/* Burger */
+
+@media screen and (min-width: 750px) {
+  .burger{
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+
+  header {
+    padding: 0 1em;
+    justify-content: space-between;
+  }
+
+
+  /* Burger  Div is important*/
+  .burger div{
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    margin: 5px;
+    transition: transform 0.3s ease-in;
+    cursor: pointer;
+  }
+
+  .nav__links{
+    position: fixed;
+    top: 60px;
+    right:0;
+    height: calc(100% - 60px);
+    background-color: #3c202a;
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: all 0.5s ease;
+
+  }
+
+  .nav__active{
+    transform: translateX(0%);
+  }
+
+  .toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .toggle .line2 {
+    opacity: 0;
+  }
+
+  .toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+
+}
+
+.img_1 {
+  width: 500px;
+  border-radius: 16px ;
+  border: 5px solid #1e0e13;
+}
+
+.about_gif {
+  margin: auto;
+}
+
+.h1_about {
+  text-align: center;
+}
+
+.about {
+  margin-top: 50px;
+  border-radius: 16px;
+  border: 5px solid #1e0e13;
+  background-color: #3c202a;
+  padding: 10px;
+  text-align: center;
+}
+
+.roadmap_comp,.roadmap_noncomp  {
+  margin-top: 8%;
+  margin-right: 10%;
+  margin-left: 10%;
+
+}
+
+.p_1_1 {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.rd {
+  font-size: 100px;
+}
+
+.name_btn {
+  margin-top: 35px;
+  border: 3px solid red;
+  text-align: center;
+  padding: 5px;
+  width: 25%;
+  border-radius: 0.25rem;
+}
+
+.com {
+  margin-top: 50px;
+}
+
+.faq_back {
+
+}
+
+.faq-list {
+  margin-top: 8%;
+  margin-right: 10%;
+  margin-left: 10%;
+  padding: 1rem;
+    text-align: center;
+
+
+
+
+}
+
+.faq_t {
+  font-size: 80px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq-list dt {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.faq-list dd {
+    margin-left: 0;
+    margin-bottom: 2rem;
+}
+
+.back_stage {
+  
+
+}
+
+.rd {
+  border-radius: 16px;
+  border: 5px solid #1e0e13;
+  background-color: #3c202a;
+  
+  text-align: center;
+}
+
+
+.completed_1 {
+  border-radius: 16px;
+  border: 5px solid #1e0e13;
+  background-color: #3c202a;
+  max-width: 800px;
+  text-align: center;
+}
+.roadmap_noncomp {
+  border-radius: 16px;
+  border: 5px solid #1e0e13;
+  background-color: #3c202a;
+  padding: 10px;
+  
+  text-align: center;
+}
+
+.faq-list {
+  border-radius: 16px;
+  border: 5px solid #1e0e13;
+  background-color: #3c202a;
+  margin-bottom: 50px;
+}
+
+.roadmap {
+  margin-bottom: 50px;
+}
